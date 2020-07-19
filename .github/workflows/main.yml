@@ -1,0 +1,19 @@
+
+name: Publish
+on:
+  push:
+    branches: [ master ]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - run: npm start
+    - name: GitHub Pages
+      uses: crazy-max/ghaction-github-pages@v2.1.0
+      with:
+        build_dir: dist
+        jekyll: false
+      env:
+        GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}

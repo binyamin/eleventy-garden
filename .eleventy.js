@@ -22,7 +22,7 @@ module.exports = function(eleventyConfig) {
     
     eleventyConfig.setLibrary('md', md);
     
-    // eleventyConfig.addPassthroughCopy('assets');
+    eleventyConfig.addPassthroughCopy('assets');
 
     return {
         useGitIgnore: false,
