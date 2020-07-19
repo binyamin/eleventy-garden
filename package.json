@@ -1,0 +1,25 @@
+{
+  "name": "eleventy-garden",
+  "version": "1.0.0",
+  "description": "A starter site for building a mind garden in eleventy.",
+  "scripts": {
+    "start": "eleventy --output=/",
+    "dev": "eleventy --serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/b3u/eleventy-garden.git"
+  },
+  "keywords": [],
+  "author": "Binyamin Aron Green (https://binyam.in/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/b3u/eleventy-garden/issues"
+  },
+  "homepage": "https://github.com/b3u/eleventy-garden#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^0.11.0",
+    "@kwvanderlinde/markdown-it-wikilinks": "^1.0.2",
+    "markdown-it-footnote": "^3.0.2"
+  }
+}

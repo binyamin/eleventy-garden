@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{site.title}}</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter&display=swap">
+    <!-- <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'> -->
+    <link rel="stylesheet" href="/assets/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/normalize.css@latest">
+</head>
+<body>
+    <header class="page-header">
+            <img src="/assets/avatar.png" alt="" width="96">
+            <a href="/">{{site.author}}'s Notes</a>
+    </header>
+    <main>
+        {{content}}
+    </main>
+    <footer class="page-footer">
+        <small>Copyright {{site.author}}</small>
+    </footer>
+</body>
+</html>

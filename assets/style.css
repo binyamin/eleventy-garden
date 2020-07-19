@@ -1,0 +1,24 @@
+body {
+    font-family: Inter, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 4px 36px 0 36px;
+}
+
+main {
+    flex-grow: 1;
+    width: calc(100vw / 2.15);
+    margin: 0 auto;
+}
+
+.page-footer {
+    text-align: center;
+    margin-bottom: 8px;
+}
