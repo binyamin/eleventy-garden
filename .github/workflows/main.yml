@@ -10,7 +10,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - run: npm ci
-    - run: npm compile
+    - run: npm run compile
     - name: GitHub Pages
       uses: crazy-max/ghaction-github-pages@v2.1.0
       with:
