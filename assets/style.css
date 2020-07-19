@@ -1,5 +1,5 @@
 html {
-    font-size:  112.5%;
+    font-size:  100%;
     scroll-behavior: smooth;
 }
 
@@ -64,6 +64,21 @@ h3 {font-size: 1.953em;}
 
 h4 {font-size: 1.563em;}
 
-h5 {font-size: 1.25em;}
+h5, .larger {font-size: 1.25em;}
 
 small {font-size: 0.8em;}
+
+/* backlinks */
+.backlinks-title {
+    margin-bottom: 0;
+}
+
+.backlinks-container {
+    margin-top: 0;
+}
+
+.backlinks-default {
+    margin-top: 0;
+    margin-left: 16px;
+    color: #444;
+}

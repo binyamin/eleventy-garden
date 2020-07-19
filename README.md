@@ -8,3 +8,5 @@ A starter site for building a mind garden in eleventy.
 - deal with metadata
 - move footnotes to sidebar
 - fetch & display backlinks
+- add tag functionality
+- page preview

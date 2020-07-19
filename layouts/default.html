@@ -14,8 +14,27 @@
             <a href="/">{{site.title}}</a>
     </header>
     <main>
-        {{content}}
+        <article>
+            {{content}}
+        </article>
+        <hr>
+        <p class="backlinks-title larger">Backlinks</p>
+        {% if backlinks.length > 0%}
+        <ul class="backlinks-container">
+            {% for link in backlinks %}
+                <li>
+                    <a href="{{link.url}}" class="backlink">{{link.title}}</a>
+                    <div class="backlink-preview" hidden>
+                        {{link.preview | markdownify}}
+                    </div>
+                </li>
+            {% endfor %}
+        </ul>
+        {% else %}
+        <p class="backlinks-default">No backlinks found.</p>
+        {% endif %}
     </main>
+    
     <footer class="page-footer">
         <small>Copyright {{site.author}}</small>
     </footer>

@@ -18,9 +18,18 @@ module.exports = function(eleventyConfig) {
     
     const md = markdownIt(markdownItOptions)
     .use(require('markdown-it-footnote'))
+    .use(require('markdown-it-attrs'))
     .use(require("@kwvanderlinde/markdown-it-wikilinks")(mdWikilinksOptions))
     
+    eleventyConfig.addFilter("markdownify", string => {
+        return md.render(string)
+    })
+
     eleventyConfig.setLibrary('md', md);
+    
+    eleventyConfig.addCollection("notes", function (collection) {
+        return collection.getFilteredByGlob(["notes/**/*.md", "index.md"]);
+    });
     
     eleventyConfig.addPassthroughCopy('assets');
 
