@@ -22,11 +22,16 @@ A starter site for building a mind garden, using [11ty](https://github.com/11ty/
 3. Run `npm start`
 
 ## Contribute
+Feel free to dive in!
+
 Here's what this project needs...
 - A readme illustration (like a banner)
 - Contributors — even fixing typos on the redme is helpful.
 - Feedback! I didn't make this repo is for myself, so y'all gotta tell me what you want.
 - Stars on GitHub
+
+### Maintainers
+[@b3u](https://github.com/b3u)
 
 ## License
 This project is under the [MIT](https://github.com/b3u/eleventy-garden/blob/master/LICENSE) license.
