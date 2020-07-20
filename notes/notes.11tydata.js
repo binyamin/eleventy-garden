@@ -2,8 +2,8 @@ const {titleCase} = require("title-case");
 const path = require("path");
 
 module.exports = {
-    layout: "default.html",
-    permalink:  "/{{page.fileSlug}}/",
+    layout: "note.html",
+    type: "note",
     eleventyComputed: {
         title: data => titleCase(data.page.fileSlug),
         backlinks: (data) => {

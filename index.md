@@ -1,6 +1,5 @@
 ---
-layout: default.html
-title: About these notes
+layout: default
 ---
 # Hi
-Hi, these are some fake notes. Feel free to poke around. You may spot an [[easter egg]]  or two! Also, I like [[foo]]d.
+I'm John Lemmon. I'm an umpteen year-old developer and musician from Liverpool, England.

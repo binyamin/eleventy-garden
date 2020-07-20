@@ -1,0 +1,45 @@
+{% assign metatitle = site.title %}
+
+{% if type == "note" %}
+    {% assign metatitle = site.author | append: "'s Notes" %}
+{% endif %}
+
+{% if title %}
+    {% assign metatitle = metatitle | prepend: " • " | prepend: title %}
+{% endif %}
+
+{% assign metadesc = site.desc %}
+{% if desc %}
+    {% assign metadesc = desc %}
+{% endif %}
+
+{% assign metatype = "website" %}
+{% if type == "note" %}
+    {% assign metatype = "article" %}
+{% endif %}
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+<link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon">
+
+<title>{{- metatitle -}}</title>
+
+<meta name="description" content="{{- metadesc -}}">
+
+<meta property="og:title" content="{{-metatitle-}}">
+<meta property="og:type" content="{{-metatype-}}">
+<meta property="og:url" content="{{ page.url | prepend: site.baseurl }}">
+<meta property="og:image" content="/assets/avatar.png">
+<meta property="og:description" content="{{- metadesc -}}">
+
+<link rel="canonical" href="{{ page.url | prepend: site.baseurl }}">
+
+<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter&display=swap">
+
+<link rel="preconnect" href="https://cdnjs.cloudflare.com/" crossorigin>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+
+<link rel="stylesheet" href="/assets/style.css">

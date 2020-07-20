@@ -7,7 +7,7 @@ module.exports = function(eleventyConfig) {
     };
     
     const mdWikilinksOptions = {
-        baseURL: "/",
+        baseURL: "/notes/",
         makeAllLinksAbsolute: true,
         uriSuffix: "/",
         linkPattern: /\[\[([\w\s/-]+)(\|([\w\s/]+))?\]\]/,

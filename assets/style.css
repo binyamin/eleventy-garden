@@ -19,6 +19,22 @@ body {
     margin: 4px 36px 0 36px;
 }
 
+.page-header a:not(:hover):not(:focus) {
+    color: currentColor;
+    text-decoration: none;
+}
+
+.page-header__logo p {
+    float: right;
+    margin-left: 12px;
+    font-size: 1.953em;
+}
+
+nav a {
+    margin: 0 12px;
+    font-size: 1.25em;
+}
+
 main {
     flex-grow: 1;
     width: calc(100vw / 2.15);

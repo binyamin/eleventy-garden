@@ -1,7 +1,6 @@
 {
-    "title": "John Lemmon's Notes",
+    "title": "John Lemmon",
     "desc": "1-2 sentences about the site (optional)",
     "author": "John Lemmon",
-    "baseurl": "https://eleventy-garden.netlify.app",
-    "metaimg": ""
+    "baseurl": "https://eleventy-garden.netlify.app"
 }

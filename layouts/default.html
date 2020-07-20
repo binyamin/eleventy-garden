@@ -1,67 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    {% assign metatitle = site.title %}
-    {% if title %}
-        {% assign metatitle = title | append: " • " | append: site.title %}
-    {% endif %}
-
-    {% assign metadesc = site.desc %}
-    {% if desc %}
-        {% assign metadesc = desc %}
-    {% endif %}
-
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    
-    <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon">
-    
-    <title>{{- metatitle -}}</title>
-    
-    <meta name="description" content="{{- metadesc -}}">
-    
-    <meta property="og:title" content="{{-metatitle-}}">
-    <meta property="og:type" content="article">
-    <meta property="og:url" content="{{ page.url | prepend: site.baseurl }}">
-    <meta property="og:image" content="/assets/avatar.png">
-    <meta property="og:description" content="{{- metadesc -}}">
-
-    <link rel="canonical" href="{{ page.url | prepend: site.baseurl }}">
-
-    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter&display=swap">
-    
-    <link rel="preconnect" href="https://cdnjs.cloudflare.com/" crossorigin>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
-    
-    <link rel="stylesheet" href="/assets/style.css">
+    {% include head.html %}
 </head>
 <body>
     <header class="page-header">
+        <a href="/" class="page-header__logo">
             <img src="/assets/avatar.png" alt="" width="96">
-            <a href="/">{{site.title}}</a>
+            <p>{{site.title}}</p>
+        </a>
+
+        <nav>
+            <a href="#">About Me</a>
+            <a href="#">Blog</a>
+            <a href="/notes">Notes</a>
+        </nav>
     </header>
     <main>
-        <article>
-            {{content}}
-        </article>
-        <hr>
-        <p class="backlinks-title larger">Backlinks</p>
-        {% if backlinks.length > 0%}
-        <ul class="backlinks-container">
-            {% for link in backlinks %}
-                <li>
-                    <a href="{{link.url}}" class="backlink">{{link.title}}</a>
-                    <div class="backlink-preview" hidden>
-                        {{link.preview | markdownify}}
-                    </div>
-                </li>
-            {% endfor %}
-        </ul>
-        {% else %}
-        <p class="backlinks-default">No backlinks found.</p>
-        {% endif %}
+        {{content}}
     </main>
     
     <footer class="page-footer">
