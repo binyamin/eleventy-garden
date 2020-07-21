@@ -16,11 +16,18 @@ body {
     flex-direction: column;
     min-height: 100vh;
 
-    margin: 0 36px;
+    margin: 0 24px;
+}
+
+@media only screen and (max-width: 468px) {
+    .page-header {
+        flex-direction: column;
+    }
 }
 
 .page-header {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     margin-top: 8px;
