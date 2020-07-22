@@ -54,5 +54,6 @@ Here's what this project needs...
 ### Maintainers
 [@b3u](https://github.com/b3u)
 
-## :scroll: License
+## :scroll: Legal
 This project is under the [MIT](https://github.com/b3u/eleventy-garden/blob/master/LICENSE) license.
+Please adhere to the [code of conduct](https://github.com/b3u/eleventy-garden/blob/master/.github/CODE_OF_CONDUCT.md).
