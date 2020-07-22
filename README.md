@@ -6,7 +6,7 @@ A starter site for building a mind garden, using [11ty](https://github.com/11ty/
 **Table of Contents**
 1. [:sparkles: Features](#sparkles-features)
 2. [:rocket: Getting Started](#rocket-getting-started)
-3. [:heart: Contribute](#️heart-contribute)
+3. [:heart: Contribute](#heart-contribute)
 4. [:scroll: License](#scroll-license)
 
 > Note: I'm not building this project for myself, so y'all gotta tell me what you think. Issues are the way to go here.
