@@ -4,24 +4,45 @@ A starter site for building a mind garden, using [11ty](https://github.com/11ty/
 [![Netlify Status](https://api.netlify.com/api/v1/badges/4ce845a6-b009-4fcf-9ad4-a560d01a0073/deploy-status)](https://app.netlify.com/sites/eleventy-garden/deploys)
 
 **Table of Contents**
-- [Getting Started](#getting-started)
-- [Contributing](#contribute)
-- [License](#license)
+1. [:sparkles: Features](#sparkles-features)
+2. [:rocket: Getting Started](#rocket-getting-started)
+3. [:heart: Contribute](#️heart-contribute)
+4. [:scroll: License](#scroll-license)
 
 > Note: I'm not building this project for myself, so y'all gotta tell me what you think. Issues are the way to go here.
 
-## Planned Features
-- [annotations](https://github.com/b3u/eleventy-garden/issues/3) (notes on the side)
-- [page preview](https://github.com/b3u/eleventy-garden/issues/2) on hover
-- ~~[mobile-friendly](https://github.com/b3u/eleventy-garden/issues/7)~~ Done
-- _See the [issue tracker](https://github.com/b3u/eleventy-garden) for more_
+## :sparkles: Features
+- Supports double-bracket links (the ones roam uses)
+- Mobile-friendly
+- Displays backlinks
+- View the [demo](eleventy-garden.netlify.app)
 
-## Getting Started
-1. Clone this template
-2. Place your notes in the `/notes` folder
-3. Run `npm start`
+**Planned**
+- annotations ([#3](https://github.com/b3u/eleventy-garden/issues/3))
+- page preview on hover ([#2](https://github.com/b3u/eleventy-garden/issues/2))
+- _See the [issue tracker](https://github.com/b3u/eleventy-garden/issues) for more_
 
-## Contribute
+## :rocket: Getting Started
+Questions? [Open an issue](https://github.com/b3u/eleventy-garden/issues/new)!
+
+[![deploy to netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/b3u/eleventy-garden)
+
+
+**First Steps**
+- Duplicate this repository by clicking <kbd>Use this template</kbd> above
+- Clone the repository locally
+
+**Make your changes**
+- Styling: The css file is in `/assets/style.css`
+- Branding: Add your logo or avatar in `/assets/avatar.png`
+- Content: `/_data/site.json` contains vital information to make the site your own
+  - Drop your notes in the `/notes` folder
+- Testing: To view it locally, open a terminal and type `npm start`
+
+**Publish it**
+- You can use Netlify, Vercel, or whatever else works.
+
+## :heart: Contribute
 Feel free to dive in!
 
 Here's what this project needs...
@@ -33,5 +54,5 @@ Here's what this project needs...
 ### Maintainers
 [@b3u](https://github.com/b3u)
 
-## License
+## :scroll: License
 This project is under the [MIT](https://github.com/b3u/eleventy-garden/blob/master/LICENSE) license.
