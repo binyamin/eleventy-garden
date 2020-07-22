@@ -8,12 +8,12 @@ A starter site for building a mind garden, using [11ty](https://github.com/11ty/
 - [Contributing](#contribute)
 - [License](#license)
 
-> Note: I'm not building this project for myself, so y'all gotta tell me what you think. Just open that issue. *Gosh*.
+> Note: I'm not building this project for myself, so y'all gotta tell me what you think. Issues are the way to go here.
 
 ## Planned Features
 - [annotations](https://github.com/b3u/eleventy-garden/issues/3) (notes on the side)
 - [page preview](https://github.com/b3u/eleventy-garden/issues/2) on hover
-- [mobile-friendly](https://github.com/b3u/eleventy-garden/issues/7)
+- ~~[mobile-friendly](https://github.com/b3u/eleventy-garden/issues/7)~~ Done
 - _See the [issue tracker](https://github.com/b3u/eleventy-garden) for more_
 
 ## Getting Started
