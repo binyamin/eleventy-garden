@@ -37,10 +37,10 @@ module.exports = function(eleventyConfig) {
         useGitIgnore: false,
         dir: {
             input: "./",
-            output: "dist",
+            output: "_site",
             layouts: "layouts",
             includes: "includes",
-            data: "data"
+            data: "_data"
         },
         passthroughFileCopy: true
     }
