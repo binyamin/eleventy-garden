@@ -31,6 +31,7 @@ Questions? [Open an issue](https://github.com/b3u/eleventy-garden/issues/new)!
 **First Steps**
 - Duplicate this repository by clicking <kbd>Use this template</kbd> above
 - Clone the repository locally
+- Run `npm install` in a terminal
 
 **Make your changes**
 - Styling: The css file is in `/assets/style.css`
