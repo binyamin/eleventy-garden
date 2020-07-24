@@ -10,9 +10,9 @@ module.exports = {
             if(data.title){
                 return data.title;
             }
-            let str = titleCase(data.page.fileSlug);
-            str = str.replace(/-/g, ' ');
-            return str;
+            let title = data.page.fileSlug.replace(/-/g, ' ');
+            title = titleCase(title);
+            return title;
         },
 
     }
