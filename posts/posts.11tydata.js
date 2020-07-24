@@ -13,14 +13,7 @@ module.exports = {
             let str = titleCase(data.page.fileSlug);
             str = str.replace(/-/g, ' ');
             return str;
-        }
+        },
 
-        // permalink: data => {
-        //     let postPermalink =
-        //         "/posts/{{ slug }}/";
-
-        //     if (process.env.ELEVENTY_ENV !== "production") return postPermalink;
-        //     else return data.draft ? false : postPermalink;
-        // }
     }
 };
