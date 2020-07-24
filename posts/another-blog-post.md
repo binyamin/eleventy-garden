@@ -1,5 +1,4 @@
 ---
-title: 'Yet another blog post'
+title: "Another blog"
 ---
-
 lalala

@@ -1,6 +1,4 @@
----
-title: 'Digital gardens are great'
----
+
 
 # Digital gardens are great
 
