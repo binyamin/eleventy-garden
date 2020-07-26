@@ -5,7 +5,7 @@ A starter site for building a mind garden, using [11ty](https://github.com/11ty/
 
 **Table of Contents**
 1. [:sparkles: Features](#sparkles-features)
-2. [:rocket: Getting Started](#rocket-getting-started)
+2. [:rocket: Usage](#rocket-usage)
 3. [:heart: Contribute](#heart-contribute)
 4. [:scroll: License](#scroll-license)
 
@@ -22,26 +22,8 @@ A starter site for building a mind garden, using [11ty](https://github.com/11ty/
 - page preview on hover ([#2](https://github.com/b3u/eleventy-garden/issues/2))
 - _See the [issue tracker](https://github.com/b3u/eleventy-garden/issues) for more_
 
-## :rocket: Getting Started
-Questions? [Open an issue](https://github.com/b3u/eleventy-garden/issues/new)!
-
-[![deploy to netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/b3u/eleventy-garden)
-
-
-**First Steps**
-- Duplicate this repository by clicking <kbd>Use this template</kbd> above
-- Clone the repository locally
-- Run `npm install` in a terminal
-
-**Make your changes**
-- Styling: The css file is in `/assets/style.css`
-- Branding: Add your logo or avatar in `/assets/avatar.png`
-- Content: `/_data/site.json` contains vital information to make the site your own
-  - Drop your notes in the `/notes` folder
-- Testing: To view it locally, open a terminal and type `npm start`
-
-**Publish it**
-- You can use Netlify, Vercel, or whatever else works.
+## :rocket: Usage
+If you're new here, see the _Getting Started_ page in [the wiki](https://github.com/b3u/eleventy-garden/wiki). Otherwise, check out the wiki guides (coming soon) or FAQ.
 
 ## :heart: Contribute
 Feel free to dive in!
