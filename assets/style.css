@@ -108,8 +108,7 @@ small {font-size: 0.8em;}
     color: var(--grey);
 }
 
-
-.backlink-preview {
+.backlink__preview {
     display: none;
     
     position: absolute;
@@ -121,7 +120,7 @@ small {font-size: 0.8em;}
     max-height: 148px;
     overflow: hidden;
 }
-.backlink-preview::after {
+.backlink__preview::after {
     content: "";
     position: absolute;
     bottom: 0;
@@ -130,12 +129,16 @@ small {font-size: 0.8em;}
     height: 24px;
 }
 
-.backlink-preview h1 {
+.backlink__preview h1 {
     font-size: 1.2rem;
     margin-top: 8px;
     font-weight: bold;
 }
 
-.backlink:hover + .backlink-preview {
+.backlink {
+    width: fit-content;
+}
+
+.backlink:hover .backlink__preview {
     display: block;
 }
