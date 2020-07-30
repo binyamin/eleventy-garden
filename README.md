@@ -15,11 +15,12 @@ A starter site for building a mind garden, using [11ty](https://github.com/11ty/
 - Supports double-bracket links (the ones roam uses)
 - Mobile-friendly
 - Displays backlinks
+- hovercards for backlinks
 - _View the [demo](https://eleventy-garden.netlify.app)_
 
 **Planned**
 - annotations ([#3](https://github.com/b3u/eleventy-garden/issues/3))
-- page preview on hover ([#2](https://github.com/b3u/eleventy-garden/issues/2))
+- hovercards for all internal links ([#5](https://github.com/b3u/eleventy-garden/issues/5))
 - _See the [issue tracker](https://github.com/b3u/eleventy-garden/issues) for more_
 
 ## :rocket: Usage
