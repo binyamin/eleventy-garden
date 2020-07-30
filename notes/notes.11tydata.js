@@ -40,20 +40,10 @@ module.exports = {
                 // Construct return object
                 const noteContent = stripYaml(n.template.inputContent);
                 
-                let preview = noteContent;
-
-                if(noteContent > 240) {
-                    // Truncate noteContent for preview
-                    preview = noteContent.slice(0, 240);
-
-                    // truncate preview further, to last period
-                    preview = preview.slice(0, preview.lastIndexOf(".") + 1);
-                }
-
                 return {
                     url: n.url,
                     title: n.data.title || titleCase(path.basename(n.filePathStem)),
-                    preview
+                    preview: noteContent
                 }
             })
         }

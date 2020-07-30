@@ -3,10 +3,10 @@
 {% if backlinks.length > 0%}
 <ul class="backlinks-container">
     {% for link in backlinks %}
-        <li>
-            <a href="{{link.url}}" class="backlink">{{link.title}}</a>
-            <div class="backlink-preview" hidden>
-                {{link.preview | markdownify}}
+        <li class="backlink">
+            <a href="{{link.url}}" class="backlink__link">{{link.title}}</a>
+            <div class="backlink__preview" role="img">
+                {{link.preview | markdownify | truncate: 240}}
             </div>
         </li>
     {% endfor %}
