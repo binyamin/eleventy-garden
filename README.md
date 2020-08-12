@@ -19,7 +19,7 @@ A starter site for building a mind garden, using [11ty](https://github.com/11ty/
 - _View the [demo](https://eleventy-garden.netlify.app)_
 
 **Planned**
-- annotations ([#3](https://github.com/b3u/eleventy-garden/issues/3))
+- searchbar ([#11](https://github.com/b3u/eleventy-garden/issues/11))
 - hovercards for all internal links ([#5](https://github.com/b3u/eleventy-garden/issues/5))
 - _See the [issue tracker](https://github.com/b3u/eleventy-garden/issues) for more_
 
