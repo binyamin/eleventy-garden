@@ -19,12 +19,12 @@ A starter site for building a mind garden, using [11ty](https://github.com/11ty/
 - _View the [demo](https://eleventy-garden.netlify.app)_
 
 **Planned**
-- searchbar ([#11](https://github.com/b3u/eleventy-garden/issues/11))
-- hovercards for all internal links ([#5](https://github.com/b3u/eleventy-garden/issues/5))
-- _See the [issue tracker](https://github.com/b3u/eleventy-garden/issues) for more_
+- searchbar ([#11](https://github.com/binyamin/eleventy-garden/issues/11))
+- hovercards for all internal links ([#5](https://github.com/binyamin/eleventy-garden/issues/5))
+- _See the [issue tracker](https://github.com/binyamin/eleventy-garden/issues) for more_
 
 ## :rocket: Usage
-If you're new here, see the _Getting Started_ page in [the wiki](https://github.com/b3u/eleventy-garden/wiki). Otherwise, check out the wiki guides (coming soon) or FAQ.
+If you're new here, see the _Getting Started_ page in [the wiki](https://github.com/binyamin/eleventy-garden/wiki). Otherwise, check out the wiki guides (coming soon) or FAQ.
 
 ## :heart: Contribute
 Feel free to dive in!
@@ -36,8 +36,8 @@ Here's what this project needs...
 - Stars on GitHub
 
 ### Maintainers
-[@b3u](https://github.com/b3u)
+[@binyamin](https://github.com/binyamin)
 
 ## :scroll: Legal
-This project is under the [MIT](https://github.com/b3u/eleventy-garden/blob/master/LICENSE) license.
-Please adhere to the [code of conduct](https://github.com/b3u/eleventy-garden/blob/master/.github/CODE_OF_CONDUCT.md).
+This project is under the [MIT](https://github.com/binyamin/eleventy-garden/blob/master/LICENSE) license.
+Please adhere to the [code of conduct](https://github.com/binyamin/eleventy-garden/blob/master/.github/CODE_OF_CONDUCT.md).

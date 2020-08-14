@@ -8,15 +8,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/b3u/eleventy-garden.git"
+    "url": "git+https://github.com/binyamin/eleventy-garden.git"
   },
   "keywords": [],
   "author": "Binyamin Aron Green (https://binyam.in/)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/b3u/eleventy-garden/issues"
+    "url": "https://github.com/binyamin/eleventy-garden/issues"
   },
-  "homepage": "https://github.com/b3u/eleventy-garden#readme",
+  "homepage": "https://github.com/binyamin/eleventy-garden#readme",
   "devDependencies": {
     "@11ty/eleventy": "^0.11.0",
     "@kwvanderlinde/markdown-it-wikilinks": "^1.0.2",
