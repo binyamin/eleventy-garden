@@ -112,6 +112,8 @@ small {font-size: 0.8em;}
     display: none;
     
     position: absolute;
+    bottom: 8px;
+    left: 100%;
     background-color: #fff;
     border-radius: 4px;
     padding: 4px;
@@ -137,6 +139,11 @@ small {font-size: 0.8em;}
 
 .backlink {
     width: fit-content;
+    position: relative;
+}
+
+.backlink:hover {
+    padding-right: 4px; /* Allow mouse to travel between link and modal */
 }
 
 .backlink:hover .backlink__preview {
