@@ -25,14 +25,13 @@ module.exports = {
 
                 // This regex finds all wikilinks in the note
                 const linksInNote = (noteContent.match(
-                    /\[\[([\w\s/-]+)(\|([\w\s/]+))?\]\]/g
+                    /\[\[([\w\s/-]+)(.\w+)?(\|([\w\s/]+))?\]\]/g
                 ) || [])
                 .map(m => (
                     // Extract link location
                     m.slice(2,-2).split("|")[0]
                         .toLowerCase()
                         .replace(/[^\w\s-]+/g,'')
-                        .replace(/\s+/g,'-')
                 ));
 
                 return linksInNote.includes(currentFileSlug);
