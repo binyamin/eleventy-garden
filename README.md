@@ -31,7 +31,7 @@ Feel free to dive in!
 
 Here's what this project needs...
 - A readme illustration (like a banner)
-- Contributors — even fixing typos on the redme is helpful.
+- Contributors — even fixing typos on the readme is helpful.
 - Feedback! I didn't make this repo is for myself, so y'all gotta tell me what you want.
 - Stars on GitHub
 
