@@ -30,10 +30,9 @@ If you're new here, see the _Getting Started_ page in [the wiki](https://github.
 Feel free to dive in!
 
 Here's what this project needs...
-- A readme illustration (like a banner)
-- Contributors — even fixing typos on the readme is helpful.
 - Feedback! I didn't make this repo is for myself, so y'all gotta tell me what you want.
 - Stars on GitHub
+- Contributors - check out the [contributing guide](https://github.com/binyamin/eleventy-garden/blob/master/CONTRIBUTING.md)
 
 ### Maintainers
 [@binyamin](https://github.com/binyamin)
