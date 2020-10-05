@@ -1,7 +1,7 @@
 const {titleCase} = require("title-case");
-const path = require("path");
 
-const wikilinkRegExp = /\[\[([\w\s/-]+)(.\w+)?\s?(\|([\w\s/]+))?\]\]/g
+// This regex finds all wikilinks in the note
+const wikilinkRegExp = /\[\[([\w\s/-]+)(.\w+)?\s?(\|\s?([\w\s/]+))?\]\]/g
 
 function removeFrontmatter(content="") {
     content = content.trimStart();
@@ -21,38 +21,38 @@ module.exports = {
             const notes = data.collections.notes;
             const currentFileSlug = data.page.fileSlug;
 
-            // Search each note for backlinks
-            return notes.filter(n => {
-                // Only fetch backlinks
-                const noteContent = removeFrontmatter(n.template.inputContent);
+            let backlinks = [];
 
-                // This regex finds all wikilinks in the note
-                const linksInNote = (noteContent.match(wikilinkRegExp) || [])
-                .map(m => (
-                    // Extract link location
-                    m.slice(2,-2)
-                        .split("|")[0]
-                        .toLowerCase()
-                        .replace(/[^\w\s/-]+/g,'')
-                ));
-
-                return linksInNote.includes(currentFileSlug);
-            }).map(n => {
-                // Construct return object
-                const noteContent = removeFrontmatter(n.template.inputContent);
+            // Search every other note for backlinks
+            for(const otherNote of notes) {
+                const noteContent = removeFrontmatter(otherNote.template.inputContent);
                 
-                // Truncate noteContent for preview
-                let preview = noteContent.slice(0, 200);
+                // Get all links from otherNote
+                const outboundLinks = (noteContent.match(wikilinkRegExp) || [])
+                    .map(link => (
+                        // Extract link location
+                        link.slice(2,-2)
+                            .split("|")[0]
+                            .toLowerCase()
+                            .replace(/[^\w\s/-]+/g,'')
+                    ));
 
-                // truncate preview further, to last period
-                preview = preview.slice(0, preview.lastIndexOf(".") +1);
-                
-                return {
-                    url: n.url,
-                    title: n.data.title,
-                    preview
+                // If the other note links here, return related info
+                if(outboundLinks.includes(currentFileSlug)) {
+
+                    // Construct preview for hovercards
+                    let preview = noteContent.slice(0, 200);
+                    preview = preview.slice(0, preview.lastIndexOf(".") +1);
+
+                    backlinks.push({
+                        url: otherNote.url,
+                        title: otherNote.data.title,
+                        preview
+                    })
                 }
-            })
+            }
+
+            return backlinks;
         }
     }
 }
