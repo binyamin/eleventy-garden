@@ -35,6 +35,7 @@ module.exports = {
                             .split("|")[0]
                             .toLowerCase()
                             .replace(/[^\w\s/-]+/g,'')
+                            .replace(/.(md|markdown)\s?$/i, "")
                     ));
 
                 // If the other note links here, return related info
