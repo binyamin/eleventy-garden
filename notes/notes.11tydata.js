@@ -12,6 +12,10 @@ function removeFrontmatter(content="") {
     return content.replace(`---\n${yamlFm}\n---`, "");
 }
 
+function caselessCompare(a, b) {
+    return a.toLowerCase() === b.toLowerCase();
+}
+
 module.exports = {
     layout: "note.html",
     type: "note",
@@ -33,13 +37,12 @@ module.exports = {
                         // Extract link location
                         link.slice(2,-2)
                             .split("|")[0]
-                            .toLowerCase()
                             .replace(/[^\w\s/-]+/g,'')
                             .replace(/.(md|markdown)\s?$/i, "")
                     ));
 
                 // If the other note links here, return related info
-                if(outboundLinks.includes(currentFileSlug)) {
+                if(outboundLinks.some(link => caselessCompare(link, currentFileSlug))) {
 
                     // Construct preview for hovercards
                     let preview = noteContent.slice(0, 200);
