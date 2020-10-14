@@ -1,6 +1,6 @@
 const {titleCase} = require("title-case");
 
-// This regex finds all wikilinks in the note
+// This regex finds all wikilinks in a string
 const wikilinkRegExp = /\[\[([\w\s/-]+)(.\w+)?\s?(\|\s?([\w\s/]+))?\]\]/g
 
 function removeFrontmatter(content="") {
@@ -23,7 +23,7 @@ module.exports = {
 
             let backlinks = [];
 
-            // Search every other note for backlinks
+            // Search the other notes for backlinks
             for(const otherNote of notes) {
                 const noteContent = removeFrontmatter(otherNote.template.inputContent);
                 
