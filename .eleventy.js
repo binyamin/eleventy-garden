@@ -6,20 +6,21 @@ module.exports = function(eleventyConfig) {
         linkify: true
     };
     
-    const mdWikilinksOptions = {
-        baseURL: "/notes/",
-        makeAllLinksAbsolute: true,
-        uriSuffix: "/",
-        linkPattern: /\[\[([\w\s/-]+)(.\w+)?(\|([\w\s/]+))?\]\]/,
-        postProcessPageName: (pageName) => {
-            return pageName.trim().toLowerCase();
-        }
-    }
-    
     const md = markdownIt(markdownItOptions)
     .use(require('markdown-it-footnote'))
     .use(require('markdown-it-attrs'))
-    .use(require("@kwvanderlinde/markdown-it-wikilinks")(mdWikilinksOptions))
+    .use(function(md) {
+        // Recognize Mediawiki links ([[text]])
+        md.linkify.add("[[", {
+            validate: /^([\w\s/-]+)(.\w+)?(\|([\w\s/]+))?\]\]/,
+            normalize: match => {
+                const parts = match.raw.slice(2,-2).split("|");
+                parts[0] = parts[0].replace(/.(md|markdown)\s?$/i, "");
+                match.text = (parts[1] || parts[0]).trim();
+                match.url = `/notes/${parts[0].trim()}/`;
+            }
+        })
+    })
     
     eleventyConfig.addFilter("markdownify", string => {
         return md.render(string)
