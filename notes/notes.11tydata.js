@@ -1,5 +1,8 @@
 const {titleCase} = require("title-case");
 
+// This regex finds all hashtags in a string
+const hashtagRegExp = /#(\w+)/g
+
 // This regex finds all wikilinks in a string
 const wikilinkRegExp = /\[\[([\w\s/-]+)(.\w+)?\s?(\|\s?([\w\s/]+))?\]\]/g
 
@@ -16,11 +19,36 @@ function caselessCompare(a, b) {
     return a.toLowerCase() === b.toLowerCase();
 }
 
+function removeFileExtension(a) {
+    return a.slice(0, -3);
+}
+
 module.exports = {
     layout: "note.html",
     type: "note",
     eleventyComputed: {
         title: data => titleCase(data.title || data.page.fileSlug),
+        hashtags: (data) => {
+            const notes = data.collections.notes;
+            let hashtags = [];
+
+            // Search all notes for hashtags utilizing removeFrontmatter
+            for (const otherNote of notes) {
+                const noteContent = removeFrontmatter(otherNote.template.inputContent);
+                
+                // Grab all hashtags from other notes
+                const outboundHashtags = (noteContent.match(hashtagRegExp) || []);
+                const url = removeFileExtension(otherNote.inputPath);
+                
+                hashtags.push({
+                    title: otherNote.data.title,
+                    tags: outboundHashtags,
+                    url: `/${url}/`,
+                });
+            }
+            //console.log(hashtags);
+            return hashtags;
+        },
         backlinks: (data) => {
             const notes = data.collections.notes;
             const currentFileSlug = data.page.fileSlug;
