@@ -10,6 +10,15 @@ module.exports = function(eleventyConfig) {
     .use(require('markdown-it-footnote'))
     .use(require('markdown-it-attrs'))
     .use(function(md) {
+        // Recognize Hashtag links (#tag)
+        md.linkify.add("#", {
+            validate: /^[\w-]+/,
+            normalize: match => {
+                match.url = "/notes/tag/".concat(match.raw.slice(1));
+            }
+        })
+    })
+    .use(function(md) {
         // Recognize Mediawiki links ([[text]])
         md.linkify.add("[[", {
             validate: /^([\w\s/-]+)(.\w+)?\s?(\|\s?([\w\s/]+))?\]\]/,
