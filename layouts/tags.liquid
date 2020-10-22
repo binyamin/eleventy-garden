@@ -1,0 +1,39 @@
+---
+pagination:
+    data: postTags
+    size: 1
+    alias: tag
+postTags:
+    - art
+    - easter
+    - food
+permalink: /notes/tag/{{ tag }}/
+layout: default
+---
+
+{% assign hashtagList = hashtags %}
+{% assign artTagsURL = '/notes/tag/art' %}
+{% assign foodTagsURL = '/notes/tag/food' %}
+{% assign easterTagsURL = '/notes/tag/easter' %}
+
+<h3>{{ title }}: #{{ tag }}</h3>
+
+{% for note in hashtagList %}
+    <ul>
+    {% if page.url contains artTagsURL %}
+        {% if note.tags contains '#art' %}
+            <li><a href="{{ note.url }}">{{ note.title }}</a></li>
+        {% endif %}
+    {% endif %}
+    {% if page.url contains foodTagsURL %}
+        {% if note.tags contains '#food' %}
+            <li><a href="{{ note.url }}">{{ note.title }}</a></li>
+        {% endif %}
+    {% endif %}
+    {% if page.url contains easterTagsURL %}
+        {% if note.tags contains '#easter' %}
+            <li><a href="{{ note.url }}">{{ note.title }}</a></li>
+        {% endif %}
+    {% endif %}
+    </ul>
+{% endfor %}
