@@ -2,4 +2,4 @@
 - standard markdown, external - [example a](https://binyam.in)
 - mediawiki-style, internal - [[ bar.md | example b ]]
 - mediawiki-style, internal, doesn't exist - [[ non-existent ]]
-- hashtag-style, internal - #tag - [#art](/notes/tag/art)
+- hashtag-style, internal - #tag - [#exampletag](/notes/tag/exampletag)
