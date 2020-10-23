@@ -5,8 +5,8 @@
     {% for link in backlinks %}
         <li class="backlink">
             <a href="{{link.url}}" class="backlink__link">{{link.title}}</a>
-            <div class="backlink__preview" role="img">
-                {{link.preview | markdownify | truncate: 240}}
+            <div class="backlink__preview" role="none">
+                {{link.preview | markdownify }}
             </div>
         </li>
     {% endfor %}
