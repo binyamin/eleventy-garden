@@ -6,15 +6,6 @@ const hashtagRegExp = /#(\w+)/g
 // This regex finds all wikilinks in a string
 const wikilinkRegExp = /\[\[([\w\s/-]+)(.\w+)?\s?(\|\s?([\w\s/]+))?\]\]/g
 
-function removeFrontmatter(content="") {
-    content = content.trimStart();
-    let yamlFm = content.substring(3, content.indexOf("---", 3)).trim();
-
-    if(!yamlFm || !content.startsWith("---")) return content; // Content has no frontmatter
-
-    return content.replace(`---\n${yamlFm}\n---`, "");
-}
-
 function caselessCompare(a, b) {
     return a.toLowerCase() === b.toLowerCase();
 }
@@ -57,8 +48,8 @@ module.exports = {
 
             // Search the other notes for backlinks
             for(const otherNote of notes) {
-                const noteContent = removeFrontmatter(otherNote.template.inputContent);
-                
+                const noteContent = otherNote.template.frontMatter.content;
+
                 // Get all links from otherNote
                 const outboundLinks = (noteContent.match(wikilinkRegExp) || [])
                     .map(link => (
@@ -73,8 +64,7 @@ module.exports = {
                 if(outboundLinks.some(link => caselessCompare(link, currentFileSlug))) {
 
                     // Construct preview for hovercards
-                    let preview = noteContent.slice(0, 200);
-                    preview = preview.slice(0, preview.lastIndexOf(".") +1);
+                    let preview = noteContent.slice(0, 240);
 
                     backlinks.push({
                         url: otherNote.url,
