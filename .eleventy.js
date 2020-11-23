@@ -14,7 +14,7 @@ module.exports = function(eleventyConfig) {
         md.linkify.add("#", {
             validate: /^[\w-]+/,
             normalize: match => {
-                match.url = "/notes/tag/".concat(match.raw.slice(1));
+                match.url = "/notes/tags/".concat(match.raw.slice(1));
             }
         })
     })
