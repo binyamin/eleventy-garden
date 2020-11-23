@@ -1,22 +1,22 @@
 ---
-pagination:
-    data: postTags
+pagination: 
+    data: noteHashTags
     size: 1
     alias: tag
-postTags:
+noteHashTags:
     - art
     - easter
     - food
-permalink: /notes/tag/{{ tag }}/
+permalink: /notes/tags/{{ tag }}/
 layout: default
 ---
 
 {% assign hashtagList = hashtags %}
-{% assign artTagsURL = '/notes/tag/art' %}
-{% assign foodTagsURL = '/notes/tag/food' %}
-{% assign easterTagsURL = '/notes/tag/easter' %}
+{% assign artTagsURL = '/notes/tags/art/' %}
+{% assign foodTagsURL = '/notes/tags/food/' %}
+{% assign easterTagsURL = '/notes/tags/easter/' %}
 
-<h3>{{ title }}: #{{ tag }}</h3>
+<h3>Tags with: #{{ tag }}</h3>
 
 {% for note in hashtagList %}
     <ul>
