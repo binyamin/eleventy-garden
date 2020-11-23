@@ -11,7 +11,7 @@ function caselessCompare(a, b) {
 }
 
 function removeFileExtension(a) {
-    return a.slice(0, -3);
+    return a.slice(1, -3);
 }
 
 module.exports = {
@@ -22,10 +22,9 @@ module.exports = {
         hashtags: (data) => {
             const notes = data.collections.notes;
             let hashtags = [];
-
             // Search all notes for hashtags utilizing removeFrontmatter
             for (const otherNote of notes) {
-                const noteContent = removeFrontmatter(otherNote.template.inputContent);
+                const noteContent = otherNote.template.frontMatter.content;
                 
                 // Grab all hashtags from other notes
                 const outboundHashtags = (noteContent.match(hashtagRegExp) || []);
@@ -34,10 +33,9 @@ module.exports = {
                 hashtags.push({
                     title: otherNote.data.title,
                     tags: outboundHashtags,
-                    url: `/${url}/`,
+                    url: `${url}/`,
                 });
             }
-            //console.log(hashtags);
             return hashtags;
         },
         backlinks: (data) => {
@@ -73,7 +71,6 @@ module.exports = {
                     })
                 }
             }
-
             return backlinks;
         }
     }
