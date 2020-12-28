@@ -10,10 +10,10 @@ noteHashTags:
 permalink: /notes/tags/{{ tag }}/
 layout: default
 ---
-{# Getting the noteHashTags list to be generated dynamically would be the golden ticket #}
+{% comment %} Getting the noteHashTags list to be generated dynamically would be the golden ticket {% endcomment %}
 
-{# Some markdown notes have the same filename as tags 
-so thats why /tags/tag is currently being used to side step this #}
+{% comment %} Some markdown notes have the same filename as tags 
+so thats why /tags/tag is currently being used to side step this {% endcomment %}
 
 {% assign hashtagList = hashtags %}
 {% assign artTagsURL = '/notes/tags/art/' %}
@@ -22,7 +22,7 @@ so thats why /tags/tag is currently being used to side step this #}
 
 <h3>Tags with: #{{ tag }}</h3>
 
-{# if this conditional checking could be automated and only display relevant lists that would be ideal #}
+{% comment %} if this conditional checking could be automated and only display relevant lists that would be ideal {% endcomment %}
 {% for note in hashtagList %}
     <ul>
     {% if page.url contains artTagsURL %}
