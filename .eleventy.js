@@ -10,7 +10,7 @@ module.exports = function(eleventyConfig) {
     .use(require('markdown-it-footnote'))
     .use(require('markdown-it-attrs'))
     .use(function(md) {
-        // Recognize Hashtag links (#tag)
+        // Recognize hashtag links (#tag)
         md.linkify.add("#", {
             validate: /^[\w-]+/,
             normalize: match => {

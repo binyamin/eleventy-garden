@@ -26,7 +26,7 @@ module.exports = {
             for (const otherNote of notes) {
                 const noteContent = otherNote.template.frontMatter.content;
                 
-                // Grab all hashtags from other notes
+                // Grab hashtags from other notes
                 const outboundHashtags = (noteContent.match(hashtagRegExp) || []);
                 const url = removeFileExtension(otherNote.inputPath);
                 
