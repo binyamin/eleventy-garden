@@ -4,7 +4,7 @@ const {titleCase} = require("title-case");
 const hashtagRegExp = /#[\w-]+/g
 
 // This regex finds all wikilinks in a string
-const wikilinkRegExp = /\[\[([\w\s/-]+)(.\w+)?\s?(\|\s?([\w\s/]+))?\]\]/g
+const wikilinkRegExp = /\[\[\s?([^\[\]\|\n\r]+)(\|[^\[\]\|\n\r]+)?\s?\]\]/g
 
 function caselessCompare(a, b) {
     return a.toLowerCase() === b.toLowerCase();
@@ -54,8 +54,8 @@ module.exports = {
                         // Extract link location
                         link.slice(2,-2)
                             .split("|")[0]
-                            .replace(/[^\w\s/-]+/g,'')
                             .replace(/.(md|markdown)\s?$/i, "")
+                            .trim()
                     ));
 
                 // If the other note links here, return related info

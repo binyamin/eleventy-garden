@@ -1,7 +1,7 @@
 # Contributing
 Hey there, and thanks for your help. Please adhere to the [Code of Conduct](https://github.com/binyamin/eleventy-garden/blob/master/.github/CODE_OF_CONDUCT.md) (be a [mentsch](https://www.merriam-webster.com/dictionary/mensch)).
 
-There are a couple ways to get started. You can submit [bug reports](#bugs) or [feature requests](#feature-requests), or work on existing bugs/features by [claiming an issue](#claiming-an-issue). If you more general questions, check out the `#eleventy-garden` channel in the [PKM discord](https://discord.gg/VNUW8ba).
+There are a couple ways to get started. You can submit [bug reports](#bugs) or [feature requests](#feature-requests), or work on existing bugs/features by [claiming an issue](#claiming-an-issue). If you have more general questions, open a new [discussion](https://github.com/binyamin/eleventy-garden/discussions).
 
 ## Bugs
 If you noticed a bug, please [submit a bug report](https://github.com/binyamin/eleventy-garden/issues/new/choose) so someone can fix it. Include as much information as you think _might_ be helpful (eg. screenshots, browser version, related issues). Remember that GitHub doesn't limit the number of characters, so you can add whatever you think is necessary.
