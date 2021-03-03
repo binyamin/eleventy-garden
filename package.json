@@ -18,9 +18,9 @@
   },
   "homepage": "https://github.com/binyamin/eleventy-garden#readme",
   "devDependencies": {
-    "@11ty/eleventy": "^0.11.1",
+    "@11ty/eleventy": "^1.0.0-canary.10",
     "markdown-it": "^12.0.4",
-    "markdown-it-attrs": "^3.0.3",
+    "markdown-it-attrs": "^4.0.0",
     "markdown-it-footnote": "^3.0.2",
     "title-case": "^3.0.3"
   }
