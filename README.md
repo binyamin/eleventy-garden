@@ -3,12 +3,6 @@ A starter site for building a [mind garden](https://www.mentalnodes.com/a-garden
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/4ce845a6-b009-4fcf-9ad4-a560d01a0073/deploy-status)](https://app.netlify.com/sites/eleventy-garden/deploys)
 
-**Table of Contents**
-1. [:house: About](#house-about)
-2. [:rocket: Usage](#rocket-usage)
-3. [:heart: Contribute](#heart-contribute)
-4. [:scroll: License](#scroll-license)
-
 > Note: I'm not building this project for myself, so y'all gotta tell me what you think. Issues are the way to go here.
 ## :house: About
 - Double-bracket links (the ones roam uses)
