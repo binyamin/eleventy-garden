@@ -1,5 +1,5 @@
 # Contributing
-Hey there, and thanks for your help. Please adhere to the [Code of Conduct](https://github.com/binyamin/eleventy-garden/blob/master/.github/CODE_OF_CONDUCT.md) (be a [mentsch](https://www.merriam-webster.com/dictionary/mensch)).
+Hey there, and thanks for your help. Please adhere to the [Code of Conduct](https://github.com/binyamin/eleventy-garden/blob/main/.github/CODE_OF_CONDUCT.md) (be a [mentsch](https://www.merriam-webster.com/dictionary/mensch)).
 
 There are a couple ways to get started. You can submit [bug reports](#bugs) or [feature requests](#feature-requests), or work on existing bugs/features by [claiming an issue](#claiming-an-issue). If you have more general questions, open a new [discussion](https://github.com/binyamin/eleventy-garden/discussions).
 

@@ -23,11 +23,11 @@ Feel free to dive in!
 Here's what this project needs...
 - Feedback! I didn't make this repo is for myself, so y'all gotta tell me what you want.
 - Stars on GitHub
-- Contributors - check out the [contributing guide](https://github.com/binyamin/eleventy-garden/blob/master/CONTRIBUTING.md)
+- Contributors - check out the [contributing guide](https://github.com/binyamin/eleventy-garden/blob/main/CONTRIBUTING.md)
 
 ### Maintainers
 [@binyamin](https://github.com/binyamin)
 
 ## :scroll: License
-This project is under the [MIT](https://github.com/binyamin/eleventy-garden/blob/master/LICENSE) license.
-Please adhere to the [code of conduct](https://github.com/binyamin/eleventy-garden/blob/master/.github/CODE_OF_CONDUCT.md).
+This project is under the [MIT](https://github.com/binyamin/eleventy-garden/blob/main/LICENSE) license.
+Please adhere to the [code of conduct](https://github.com/binyamin/eleventy-garden/blob/main/.github/CODE_OF_CONDUCT.md).
