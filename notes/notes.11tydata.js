@@ -14,7 +14,7 @@ module.exports = {
         title: data => titleCase(data.title || data.page.fileSlug),
         backlinks: (data) => {
             const notes = data.collections.notes;
-            const currentFileSlug = data.page.fileSlug;
+            const currentFileSlug = data.page.filePathStem.replace('/notes/', '');
 
             let backlinks = [];
 
