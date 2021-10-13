@@ -2,3 +2,5 @@ readme.md
 CONTRIBUTING.md
 .github/
 _drafts/
+_site/
+node_modules/
