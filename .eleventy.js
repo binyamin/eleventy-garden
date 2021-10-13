@@ -33,9 +33,9 @@ module.exports = function(eleventyConfig) {
     });
     
     eleventyConfig.addPassthroughCopy('assets');
+    eleventyConfig.setUseGitIgnore(false);
 
     return {
-        useGitIgnore: false,
         dir: {
             input: "./",
             output: "_site",
