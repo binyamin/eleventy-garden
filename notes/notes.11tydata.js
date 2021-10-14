@@ -11,7 +11,18 @@ module.exports = {
     layout: "note.html",
     type: "note",
     eleventyComputed: {
-        title: data => titleCase(data.title || data.page.fileSlug),
+        title: function(data) {
+            const itm = this.getCollectionItem(data.collections.notes, {...data.page});
+            const content = itm?.template.frontMatter.content;
+
+            function getTitle(content) {
+                if(!content) return null;
+                const firstLine = content.substring(0, content.indexOf('\n'));
+                return firstLine.startsWith("#") ? firstLine.replace(/#\s*/, '') : null;
+            }
+
+            return getTitle(content) || titleCase(data.title || data.page.fileSlug)
+        },
         backlinks: (data) => {
             const notes = data.collections.notes;
             const currentFileSlug = data.page.filePathStem.replace('/notes/', '');
