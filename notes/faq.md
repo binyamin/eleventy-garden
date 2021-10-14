@@ -1,6 +1,6 @@
 ---
 title: FAQ
-desc: Frequently-asked questions include
+desc: Frequently-asked questions
 ---
 
 # FAQ
