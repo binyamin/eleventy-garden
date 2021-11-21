@@ -18,7 +18,7 @@ module.exports = {
             function getTitle(content) {
                 if(!content) return null;
                 const firstLine = content.substring(0, content.indexOf('\n'));
-                return firstLine.startsWith("#") ? firstLine.replace(/#\s*/, '') : null;
+                return firstLine.startsWith("#") ? firstLine.replace(/#\s*/, '').replace(/\r/, '') : null;
             }
 
             return getTitle(content) || titleCase(data.title || data.page.fileSlug)
