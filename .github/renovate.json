@@ -1,7 +1,6 @@
 {
-  "extends": [
-    "config:base"
-  ],
-  "labels": ["dependencies"],
-  "rangeStrategy": "bump"
+    "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+    "extends": [
+        "local>binyamin/.github:renovate-config"
+    ]
 }
