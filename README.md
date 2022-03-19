@@ -14,7 +14,7 @@ A starter site for building a [mind garden](https://www.mentalnodes.com/a-garden
 - [mathieudutour/gatsby-digital-garden](https://github.com/mathieudutour/gatsby-digital-garden/)
 - Find more at [maggieappleton/digital-gardeners](https://github.com/maggieappleton/digital-gardeners)
 ## :rocket: Usage
-If you're new here, see the _Getting Started_ page in [the wiki](https://github.com/binyamin/eleventy-garden/wiki). Otherwise, check out the wiki guides (coming soon) or FAQ.
+If you're new here, see the _Getting Started_ page in [the wiki](https://eleventy-garden.netlify.app/notes/). Otherwise, check out the wiki guides (coming soon) or FAQ.
 
 ## :heart: Contribute
 Feel free to dive in!

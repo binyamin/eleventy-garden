@@ -1,8 +1,3 @@
----
-title: FAQ
-desc: Frequently-asked questions
----
-
 # FAQ
 
 **Q**: Can I have subfolders in my notes?\

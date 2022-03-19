@@ -18,7 +18,7 @@ module.exports = {
             function getTitle(content) {
                 if(!content) return null;
                 const firstLine = content.substring(0, content.indexOf('\n'));
-                return firstLine.startsWith("#") ? firstLine.replace(/#\s*/, '') : null;
+                return firstLine.startsWith("#") ? firstLine.replace(/#\s*/, '').replace(/\r/, '') : null;
             }
 
             return getTitle(content) || titleCase(data.title || data.page.fileSlug)
@@ -49,9 +49,11 @@ module.exports = {
                     // Construct preview for hovercards
                     let preview = noteContent.slice(0, 240);
 
+                    const altTitle = noteContent?.substring(0, noteContent.indexOf('\n')).replace(/#\s*/, '').replace(/\r/, '');
+
                     backlinks.push({
                         url: otherNote.url,
-                        title: otherNote.data.title,
+                        title: otherNote.data.title ? otherNote.data.title : altTitle,
                         preview
                     })
                 }

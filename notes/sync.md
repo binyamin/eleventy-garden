@@ -1,8 +1,5 @@
----
-title: Syncing your Template
----
-
 # Syncing your template
+
 If you need to update your version of eleventy-garden, run the following git commands
 
 ```shell
@@ -19,4 +16,5 @@ $ git merge upstream/main -m "Update from template"
 # Recreate any uncommited changes
 $ git stash apply
 ```
+
 You may see merge conflicts (ie. lines of code which changed in both your version and the original). VS Code can help you resolve them.
