@@ -4,7 +4,7 @@ const {titleCase} = require("title-case");
 const wikilinkRegExp = /\[\[\s?([^\[\]\|\n\r]+)(\|[^\[\]\|\n\r]+)?\s?\]\]/g
 
 function caselessCompare(a, b) {
-    return a.toLowerCase() === b.toLowerCase();
+    return a.normalize().toLowerCase() === b.normalize().toLowerCase();
 }
 
 module.exports = {
