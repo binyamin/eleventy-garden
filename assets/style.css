@@ -1,11 +1,13 @@
 :root {
-    --accent: #2D9CDB;
+    --accent: #C792EA;
     --grey: #444;
 }
 
 html {
     font-size:  100%;
     scroll-behavior: smooth;
+    background-color: #011627;
+    color: #ffffff;
 }
 
 body {
@@ -79,6 +81,7 @@ h1, h2, h3, h4, h5 {
   margin: 2.75rem 0 1.05rem;
   font-weight: 400;
   line-height: 1.15;
+  color: #c5e478;
 }
 
 h1 {font-size: 3.052em;}

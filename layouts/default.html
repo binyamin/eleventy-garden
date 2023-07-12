@@ -1,26 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     {% include 'head.html' %}
-</head>
-<body>
+  </head>
+  <body>
     <header class="page-header">
-        <a href="/" class="page-header__logo" title="Go home">
-            <img src="/assets/avatar.png" alt="" width="48">
-        </a>
+      <a href="/" class="page-header__logo" title="Go home">
+        <img src="/assets/avatar.jpg" alt="" width="48" />
+      </a>
 
-        <nav>
-            <a href="/">Home</a>
-            <a href="/about">About Me</a>
-            <a href="/notes">Notes</a>
-        </nav>
+      <nav>
+        <a href="/">Home</a>
+        <a href="/about">About Me</a>
+        <a href="/notes">Notes</a>
+      </nav>
     </header>
-    <main>
-        {{content}}
-    </main>
-    
+    <main>{{content}}</main>
+
     <footer class="page-footer">
-        <small>Copyright {{site.author}}</small>
+      <small>Copyright {{site.author}}</small>
     </footer>
-</body>
+  </body>
 </html>

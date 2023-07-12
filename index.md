@@ -1,5 +1,7 @@
 ---
 layout: default
 ---
+
 # Hi
-I'm John Lemmon. I'm an umpteen year-old developer and musician from Liverpool, England.
+
+I'm Doug Wade. I do software development stuff and talk about soccer a bunch.
