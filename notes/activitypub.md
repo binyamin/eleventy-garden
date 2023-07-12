@@ -9,3 +9,7 @@ ActivityPub is interesting to me.
 - Is there a maximum message size?
 - How do I define schemata/object types?
 - How is the Bluesky competing protocol different? Why did they create it?
+
+## Links
+
+- https://www.w3.org/TR/activitypub/
