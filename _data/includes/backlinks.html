@@ -1,0 +1,16 @@
+<hr>
+<p class="backlinks-title larger">Backlinks</p>
+{% if backlinks.length > 0%}
+<ul class="backlinks-container">
+    {% for link in backlinks %}
+        <li class="backlink">
+            <a href="{{link.url}}" class="backlink__link">{{link.title}}</a>
+            <div class="backlink__preview" role="none">
+                {{link.preview | markdownify }}
+            </div>
+        </li>
+    {% endfor %}
+</ul>
+{% else %}
+<p class="backlinks-default">No backlinks found.</p>
+{% endif %}
