@@ -1,2 +1,2 @@
-# 😁 Grinning
+# Grinning
 I'm happy
