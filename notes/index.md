@@ -1,5 +1,5 @@
 ---
-title: About these notes
+title: Digital Garden
 ---
-# About these Notes
-These are some fake notes. Feel free to poke around. You may spot an [[easter egg]]  or two! Also, I like [[food]].
+# Digital Garden
+This is mainly going to be an index of the books i have read , have or going to read. [[Books]] --- [[easter egg]]---[[food]].
