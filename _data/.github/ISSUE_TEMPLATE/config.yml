@@ -1,0 +1,4 @@
+contact_links:
+  - name: 😧 It's not working...
+    url: https://github.com/binyamin/eleventy-garden/discussions
+    about: Start a discussion on GitHub
