@@ -1,14 +1,16 @@
-module.exports = function(eleventyConfig) {
-    
-    const markdownIt = require('markdown-it');
+import markdownIt from 'markdown-it';
+import mdFootnote from 'markdown-it-footnote';
+import mdAttrs from 'markdown-it-attrs';
+
+export default function (eleventyConfig) {    
     const markdownItOptions = {
         html: true,
         linkify: true
     };
     
     const md = markdownIt(markdownItOptions)
-    .use(require('markdown-it-footnote'))
-    .use(require('markdown-it-attrs'))
+    .use(mdFootnote)
+    .use(mdAttrs)
     .use(function(md) {
         // Recognize Mediawiki links ([[text]])
         md.linkify.add("[[", {
@@ -29,7 +31,7 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.setLibrary('md', md);
     
     eleventyConfig.addCollection("notes", function (collection) {
-        return collection.getFilteredByGlob(["notes/**/*.md", "index.md"]);
+        return collection.getFilteredByGlob(["src/notes/**/*.md", "src/index.md"]);
     });
     
     eleventyConfig.addPassthroughCopy('src/assets');

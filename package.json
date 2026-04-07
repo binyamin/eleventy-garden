@@ -1,6 +1,7 @@
 {
   "name": "eleventy-garden",
   "version": "1.0.0",
+  "type": "module",
   "description": "A starter site for building a mind garden in eleventy.",
   "scripts": {
     "start": "eleventy --serve --quiet",
@@ -18,10 +19,10 @@
   },
   "homepage": "https://github.com/binyamin/eleventy-garden#readme",
   "devDependencies": {
-    "@11ty/eleventy": "^1.0.2",
-    "markdown-it": "^12.3.2",
+    "@11ty/eleventy": "^3.1.5",
+    "markdown-it": "^14.1.1",
     "markdown-it-attrs": "^4.3.1",
-    "markdown-it-footnote": "^3.0.3",
-    "title-case": "^3.0.3"
+    "markdown-it-footnote": "^4.0.0",
+    "title-case": "^4.3.2"
   }
 }
