@@ -1,10 +1,9 @@
 ---
 name: "\U0001F381 Feature request"
 about: Suggest an idea for this project
-title: ''
+title: ""
 labels: feature
-assignees: ''
-
+assignees: ""
 ---
 
 <!-- Fill out as much information as you feel is necessary -->
