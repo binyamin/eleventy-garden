@@ -1,28 +1,29 @@
 {
-  "name": "eleventy-garden",
-  "version": "1.0.0",
-  "type": "module",
-  "description": "A starter site for building a mind garden in eleventy.",
-  "scripts": {
-    "start": "eleventy --serve --quiet",
-    "compile": "eleventy"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/binyamin/eleventy-garden.git"
-  },
-  "keywords": [],
-  "author": "Binyamin Aron Green (https://binyam.in/)",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/binyamin/eleventy-garden/issues"
-  },
-  "homepage": "https://github.com/binyamin/eleventy-garden#readme",
-  "devDependencies": {
-    "@11ty/eleventy": "^3.1.5",
-    "markdown-it": "^14.1.1",
-    "markdown-it-attrs": "^4.3.1",
-    "markdown-it-footnote": "^4.0.0",
-    "title-case": "^4.3.2"
-  }
+	"name": "eleventy-garden",
+	"version": "1.0.0",
+	"type": "module",
+	"description": "A starter site for building a mind garden in eleventy.",
+	"scripts": {
+		"start": "eleventy --serve --quiet",
+		"compile": "eleventy"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/binyamin/eleventy-garden.git"
+	},
+	"keywords": [],
+	"author": "Binyamin Aron Green (https://binyam.in/)",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/binyamin/eleventy-garden/issues"
+	},
+	"homepage": "https://github.com/binyamin/eleventy-garden#readme",
+	"devDependencies": {
+		"@11ty/eleventy": "^3.1.5",
+		"dprint": "^0.53.2",
+		"markdown-it": "^14.1.1",
+		"markdown-it-attrs": "^4.3.1",
+		"markdown-it-footnote": "^4.0.0",
+		"title-case": "^4.3.2"
+	}
 }
