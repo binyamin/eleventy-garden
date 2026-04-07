@@ -5,7 +5,8 @@
 	"description": "A starter site for building a mind garden in eleventy.",
 	"scripts": {
 		"start": "eleventy --serve --quiet",
-		"compile": "eleventy"
+		"compile": "eleventy",
+		"format": "dprint fmt"
 	},
 	"repository": {
 		"type": "git",
