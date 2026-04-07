@@ -32,12 +32,12 @@ module.exports = function(eleventyConfig) {
         return collection.getFilteredByGlob(["notes/**/*.md", "index.md"]);
     });
     
-    eleventyConfig.addPassthroughCopy('assets');
+    eleventyConfig.addPassthroughCopy('src/assets');
     eleventyConfig.setUseGitIgnore(false);
 
     return {
         dir: {
-            input: "./",
+            input: "src",
             output: "_site",
             layouts: "layouts",
             includes: "includes",
