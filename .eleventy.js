@@ -2,6 +2,8 @@ import markdownIt from 'markdown-it';
 import mdAttrs from 'markdown-it-attrs';
 import mdFootnote from 'markdown-it-footnote';
 
+import backlinksPlugin from 'eleventy-plugin-backlinks';
+
 export default function(eleventyConfig) {
 	const markdownItOptions = {
 		html: true,
@@ -30,8 +32,12 @@ export default function(eleventyConfig) {
 
 	eleventyConfig.setLibrary('md', md);
 
-	eleventyConfig.addCollection('notes', function(collection) {
-		return collection.getFilteredByGlob(['src/notes/**/*.md', 'src/index.md']);
+	eleventyConfig.addPlugin(backlinksPlugin, {
+		getData: (note) => ({
+			url: note.url,
+			title: note.data.title,
+			preview: note.data.preview,
+		}),
 	});
 
 	eleventyConfig.addPassthroughCopy('src/assets');
