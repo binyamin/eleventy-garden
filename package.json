@@ -20,10 +20,10 @@
 	},
 	"homepage": "https://github.com/binyamin/eleventy-garden#readme",
 	"devDependencies": {
-		"@11ty/eleventy": "^3.1.5",
-		"dprint": "^0.55.0",
+		"@11ty/eleventy": "^3.1.6",
+		"dprint": "^0.55.2",
 		"eleventy-plugin-backlinks": "^1.0.0",
-		"markdown-it": "^14.1.1",
+		"markdown-it": "^14.3.0",
 		"markdown-it-attrs": "^5.0.0",
 		"markdown-it-footnote": "^4.0.0",
 		"title-case": "^4.3.2"
