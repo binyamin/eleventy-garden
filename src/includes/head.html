@@ -1,9 +1,18 @@
-{% assign metatitle = site.title %} {% if type == "note" %} {% assign metatitle
-= site.author | append: "'s Notes" %} {% endif %} {% if title %} {% assign
-metatitle = metatitle | prepend: " • " | prepend: title %} {% endif %} {% assign
-metadesc = site.desc %} {% if desc %} {% assign metadesc = desc %} {% endif %}
-{% assign metatype = "website" %} {% if type == "note" %} {% assign metatype =
-"article" %} {% endif %}
+{% assign metatitle = site.title %}
+{% if type == "note" %}
+	{% assign metatitle = site.author | append: "'s Notes" %}
+{% endif %}
+{% if title %}
+	{% assign metatitle = metatitle | prepend: " • " | prepend: title %}
+{% endif %}
+{% assign metadesc = site.desc %}
+{% if desc %}
+	{% assign metadesc = desc %}
+{% endif %}
+{% assign metatype = "website" %}
+{% if type == "note" %}
+	{% assign metatype = "article" %}
+{% endif %}
 
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
