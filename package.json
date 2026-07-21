@@ -24,7 +24,7 @@
 		"dprint": "^0.55.0",
 		"eleventy-plugin-backlinks": "^1.0.0",
 		"markdown-it": "^14.1.1",
-		"markdown-it-attrs": "^4.3.1",
+		"markdown-it-attrs": "^5.0.0",
 		"markdown-it-footnote": "^4.0.0",
 		"title-case": "^4.3.2"
 	}
