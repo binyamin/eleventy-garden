@@ -21,7 +21,7 @@
 	"homepage": "https://github.com/binyamin/eleventy-garden#readme",
 	"devDependencies": {
 		"@11ty/eleventy": "^3.1.6",
-		"dprint": "^0.55.2",
+		"dprint": "^0.57.0",
 		"eleventy-plugin-backlinks": "^1.0.0",
 		"markdown-it": "^14.3.0",
 		"markdown-it-attrs": "^5.0.0",
